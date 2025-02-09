@@ -27,7 +27,6 @@ I made a loop of adding averages (up, down, left, right, center) and inertia for
 ## ソースリストの説明
 
 updateが上記の単純計算です。for文で新しいzの値を計算します。ix,iyを中心とした5点の平均をとっているのが表面張力、これに前回値kを加算してz1に新しいzの値を作っていきます。上下左右の端は、隣の値をコピーします。これにより自由端反射となります。次に前回移動量kをz1-zとします。ここにあるifは、最初の波を穏やかにするために入れてあります。最後にz1をzに代入し、plot_surfaceで面を更新します。
-以上。これだけです。
 
 ~~~ python
 # free end refrections
